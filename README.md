@@ -27,9 +27,10 @@ I hope this help you to see the way that I solved the questions and if you want 
 
 <img  style="border-radius: 50%;"  src="https://avatars.githubusercontent.com/u/70340221?v=4"  width="100px;"  alt="Victor"/>
   
-<sub><b>Victor Hugo</b></sub>🚀
+<sub><b>Victor Hugo da Silva</b></sub>🚀
 
-Feito com ❤️ por Victor Hugo da Silva 👋🏽 Entre em contato!
+Made with dedication by Victor Silva
+Contact
 
 ---
 
