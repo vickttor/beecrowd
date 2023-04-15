@@ -7,5 +7,5 @@ void main(List<String> args) {
 
   String totalSalary = ((0.15 * salesAmount) + fixedSalary).toStringAsFixed(2);
 
-  print("TOTAL = $totalSalary");
+  print("TOTAL = R\$ $totalSalary");
 }
