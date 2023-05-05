@@ -9,6 +9,7 @@ void main() {
   num bankNotes20 = bankNotes50 % 50;
   num bankNotes10 = bankNotes20 % 20;
   num bankNotes5 = bankNotes10 % 10;
+
   num bankNotes2 = bankNotes5 % 5;
 
   num coins100 = bankNotes2 % 2;
