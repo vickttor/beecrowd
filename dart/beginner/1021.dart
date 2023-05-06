@@ -2,22 +2,15 @@ import 'dart:io';
 
 void main() {
   double totalAmount = double.parse(stdin.readLineSync().toString().trim());
+  double aux = totalAmount * 100;
 
   int bankNotes100 = totalAmount ~/ 100;
-
   num bankNotes50 = totalAmount % 100;
   num bankNotes20 = bankNotes50 % 50;
   num bankNotes10 = bankNotes20 % 20;
   num bankNotes5 = bankNotes10 % 10;
-
   num bankNotes2 = bankNotes5 % 5;
-
-  num coins100 = bankNotes2 % 2;
-  num coins050 = coins100 % 1;
-  num coins025 = coins050 % 0.50;
-  num coins010 = coins025 % 0.25;
-  num coins005 = coins010 % 0.10;
-  num coins001 = coins005 % 0.05;
+  num coins100 = (bankNotes2 % 2) ~/ 1;
 
   bankNotes50 ~/= 50;
   bankNotes20 ~/= 20;
@@ -25,12 +18,16 @@ void main() {
   bankNotes5 ~/= 5;
   bankNotes2 ~/= 2;
 
-  coins100 ~/= 1;
-  coins050 ~/= 0.50;
-  coins025 ~/= 0.25;
-  coins010 ~/= 0.10;
-  coins005 ~/= 0.05;
-  coins001 ~/= 0.01;
+  aux = aux % 100;
+  num coins050 = aux ~/ 50;
+  aux = aux % 50;
+  num coins025 = aux ~/ 25;
+  aux = aux % 25;
+  num coins010 = aux ~/ 10;
+  aux = aux % 10;
+  num coins005 = aux ~/ 5;
+  aux = aux % 5;
+  num coins001 = aux ~/ 1;
 
   print("NOTAS:");
   print("$bankNotes100 nota(s) de R\$ 100.00");
