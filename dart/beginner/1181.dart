@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  var matrix = List.filled(12, List.filled(12, 0.0));
+  var matrix = List.generate(12, (index) => List.filled(12, 0.0));
   double total = 0;
   int L = 0;
   String T = 'S';

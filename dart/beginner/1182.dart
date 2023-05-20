@@ -1,8 +1,8 @@
 import 'dart:io';
 
 void main() {
-  const int MAX_LENGTH = 12;
-  var matriz = List.filled(MAX_LENGTH, List.filled(MAX_LENGTH, 0.0));
+  List<List<double>> matriz =
+      List.generate(12, (index) => List.filled(12, 0.0));
   double total = 0;
   int C = 0;
   String T = 'S';
@@ -10,8 +10,8 @@ void main() {
   C = int.parse(stdin.readLineSync().toString().trim());
   T = stdin.readLineSync().toString().trim();
 
-  for (int i = 0; i < MAX_LENGTH; i++) {
-    for (int j = 0; j < MAX_LENGTH; j++) {
+  for (int i = 0; i < 12; i++) {
+    for (int j = 0; j < 12; j++) {
       matriz[i][j] = double.parse(stdin.readLineSync().toString().trim());
     }
   }
@@ -20,7 +20,7 @@ void main() {
     total += row[C];
   });
 
-  if (T == 'M') total /= MAX_LENGTH;
+  if (T == 'M') total /= 12;
 
   print(total.toStringAsFixed(1));
 }
