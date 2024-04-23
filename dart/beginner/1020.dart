@@ -12,8 +12,8 @@ void main() {
   months ~/= 30;
 
   print("""$years ano(s)
-$months mes(es)
-$days dia(s)""");
+  $months mes(es)
+  $days dia(s)""");
 }
 
 // Time spent: 4min:44s
